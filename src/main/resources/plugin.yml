@@ -1,0 +1,15 @@
+name: MythAutoMessage
+version: 1.0
+main: com.mythicalshop.mythautomessage.MythAutoMessage
+api-version: 1.16
+author: ja_toxly
+description: Best AutoMessage Plugin
+commands:
+  automessage:
+    description: Reloads the auto message configuration.
+    usage: /<command> reload
+    permission: myth.automessage.reload
+permissions:
+  myth.automessage.reload:
+    description: Allows reloading the auto message configuration.
+    default: op

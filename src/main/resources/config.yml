@@ -1,0 +1,50 @@
+# MythicalShop.pl - AutoMessage Plugin 1.16.5 - 1.20.6
+# Support: https://dc.mythicalshop.pl or https://discord.gg/xwuzxphECN
+#
+# permissions: myth.automessage.reload
+
+example1:
+  # Delay in seconds for example 30 is 30s
+  delay: 30
+  # Type of message: CHAT/BOSSBAR/TITLE/ACTIONBAR
+  type: CHAT
+  # Custom message with color codes &a, &c, etc.
+  message:
+    - "&9&lᴅɪѕᴄᴏʀᴅ &8▶ &fJoin our community on &9dc.mythicalshop.pl"
+  # List of worlds where the message should appear
+  worlds:
+    - "world"
+    - "world_nether"
+  # Whether the message should be global (ignore worlds)
+  global: true
+
+example2:
+  delay: 60
+  type: BOSSBAR
+  message:
+    - "&aHello World"
+  color: "YELLOW"
+  display-time: 10 # time in seconds
+  worlds:
+    - "world"
+  global: false
+
+example3:
+  delay: 300
+  type: TITLE
+  message:
+    - "&e&lHello All!"
+  subtitle: "&fJoin our discord"
+  worlds:
+    - "world"
+  global: false
+
+example4:
+  delay: 45
+  type: ACTIONBAR
+  message:
+    - "&bThis is an action bar message!"
+  display-time: 5 # time in seconds
+  worlds:
+    - "world"
+  global: true
